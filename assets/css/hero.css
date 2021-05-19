@@ -7,6 +7,15 @@
     -webkit-box-align: center;
     align-items: center;
     height: 100%;
+    
+}
+
+#container-hero-section > h1 {
+    font-size: 4rem;
+}
+
+#container-hero-section > p {
+    font-size: 1.3rem;
 }
 
 h1::after{
@@ -21,4 +30,14 @@ h1::after{
 }
 .blue-icon{
     color: #c407f6;
+}
+
+@media (min-width: 576px) {
+    #container-hero-section > h1 {
+        font-size: 6rem;
+    }
+    
+    #container-hero-section > p {
+        font-size: 1.5rem;
+    }
 }
