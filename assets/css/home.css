@@ -48,11 +48,54 @@ html,body{
     padding-top: 1rem;
 }
 
+
+.card{
+    box-shadow: 2px 3px 1rem;
+    border-radius: 0.5rem;
+}
+
+
+@keyframes cardHoverUp{
+    0% {}
+    100%{transform: scale(1.1);}
+}
+
+@keyframes cardHoverDown{
+    0% {}
+    100%{transform: scale(1);}
+}
+
+.card:hover{
+    animation: cardHoverUp 1s forwards;
+    z-index: 5;
+}
+
+
+
+.card:hover > .card-body{
+    
+    background-color: rgba(173, 216, 230, 0.3);
+    
+
+    -moz-transition:    background 0.35s linear;
+    -o-transition:      background 0.35s linear;
+    -webkit-transition: background 0.35s linear;
+    -ms-transition:     background 0.35s linear;
+    transition:         background 0.35s linear;
+}
+
+.img-fluid.card-img-top{
+    padding: 0.5rem;
+}
+
 .card-img-top{
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
+
+
+
 .card-title, .card-text{
     text-align: center;
 }
@@ -88,12 +131,32 @@ html,body{
     width: 50%;
 }
 
+#aboutme{
+    text-align: center;
+}
+
+#aboutmyskills{
+    text-align: center;
+}
+
+
 @media (min-width: 576px) { 
+    
     #personalinfo{
         height: 50vh;
     }
 }
 @media (min-width: 768px) { 
+
+    
+    #aboutmyskills{
+        text-align: justify;
+    }
+
+    #aboutme{
+        text-align: justify;
+    }
+
     #personalinfo{
         height: 100vh;
     }
