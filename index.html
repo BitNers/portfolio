@@ -11,10 +11,11 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="preload" as="style" defer>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
+    
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" defer>
-    <link rel="stylesheet" href="assets/css/home.min.css" defer>
-    <link rel="stylesheet" href="assets/css/hero.min.css" defer>
+    <link rel="stylesheet" href="assets/css/home.css" defer>
+    <link rel="stylesheet" href="assets/css/hero.css" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="icon" href="assets/images/coding.png" async>
 
@@ -29,7 +30,7 @@
 
             <div class="col-12 col-md-2 sidebar text-center" id="personalinfo">
 
-                <div class="container" id="person-card-photo">
+                <div class="container animate__animated animate__fadeInUp" id="person-card-photo">
                     <div class="row h-100">
                         <div class="col h-100">
                             <img class="img-fluid" src="assets/images/me.jpg" alt="Wesley Silva"
@@ -65,11 +66,11 @@
 
             <div class="col-md-10 offset-md-2" id="content-right">
 
-                <div class="jumbotron jumbotron-fluid" id="hero-jumbotron" title="Photo by Alexandre Debiève">
-                    <!-- Photo by Alexandre Debiève (Unsplash)-->
+                <div class="jumbotron jumbotron-fluid" id="hero-jumbotron" title="Foto por Mihai">
+                    <!-- Photo by Mihai (Unsplash)-->
                     <div class="d-flex flex-column justify-content-center" id="container-hero-section">
-                        <h1 class="display-2">Wesley Silva</h1>
-                        <p class="lead">$
+                        <h1 class="display-2 animate__animated  animate__fadeInUp">Wesley Silva</h1>
+                        <p class="lead animate__animated animate__fadeInRight animate__delay-1s">$
                             <span class="typed"
                                 data-typed-items="Desenvolvedor Back-End, Júnior SysAdmin, Entuasiasta em Hardware e IoT, Apaixonado por Café ☕"></span>
                         </p>
@@ -77,6 +78,7 @@
                     </div>
 
                 </div>
+                
 
                 <!-- 
                 
@@ -84,8 +86,8 @@
 
                     -->
 
-
-                <br>
+                <br><br>
+                <div style="padding-top: 1rem;"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -100,7 +102,8 @@
                                         <h2 class="lead text-justify" id="aboutme">Meu nome é <b class="purple-underline">Wesley Silva</b>, tenho 
                                             <span id="myAge"></span>
                                             anos e moro no Rio de Janeiro. 
-                                            Sou Bacharel em <b>Ciência da Computação</b> pela faculdade da Anhanguera - UNIAN.
+                                            Sou Bacharel em <b>Ciência da Computação</b> pela faculdade da Anhanguera - UNIAN.<br>
+                                            Tenho mais de 2 anos de experiência na área da Tecnologia da Informação disposto a trazer a melhor solução para qualquer desafio.
                                     </div>
                                 </div>
                                
@@ -108,8 +111,9 @@
                             <div class="col-12 col-md-6 ">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h2 class="lead text-justify" id="aboutme">Desde sempre, tive o prazer e o desejo em seguir a área de tecnologia, 
-                                            continuamente aprendendo coisas novas e trabalhar em equipe, produzindo resultados e bater metas.
+                                        <h2 class="lead text-right" id="aboutme">Desde sempre, tive o prazer e o desejo em seguir a área de tecnologia, 
+                                            com base para trabalhar em Back-End como minha principal área, continuamente aprendendo coisas novas, sendo cooperativo e 
+                                            produzindo resultados e alcançar metas. <i>Mente aberta e flexível para trabalhar com novas tecnologias e outras áreas se necessário.</i>
                                     </div>
                                 </div>
                             </div>
@@ -124,8 +128,57 @@
                     <br><br>
                     <div class="row">
                         <div class="col-12">
-                            <h1>Habilidades</h1>
-                            <h2 class="lead text-justify" id="aboutmyskills">Aqui descrevo minhas habilidades que já tenho um certo tipo de domínio. Estou praticando outras linguagens e tecnologias, todas sendo documentadas e adicionadas ao meu GitHub.
+                            <h1>Main Skills</h1>
+                            <h2 class="lead text-justify" id="aboutmyskills">Aqui descrevo minhas principais habilidades, com um domínio sólido e preparado.
+                            </h2>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" id="row-skills">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/logos/Csharp-logo.png" class="img-fluid card-img-top"
+                                        alt="C#">
+                                    <div class="card-body">
+                                        <h5 class="card-title">C# e Framework .NET</h5>
+                                        <p class="card-text">Conhecimentos das principais classes do C# e o Framework
+                                            .NET como <b>Entity Framework</b> e <b>ASP.NET</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/logos/Python-logo.png" class="img-fluid card-img-top"
+                                        alt="Python">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Python</h5>
+                                        <p class="card-text">Conhecimento das principais funcionalidades de Python além
+                                            de diversar bibliotecas para <b>Machine Learning</b>, <b>Data Science</b>, <b>DevOps</b> e <b>Desenvolvimento Web (Flask)</b>. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/logos/DB-Logo.png" class="img-fluid card-img-top"
+                                        alt="SQL">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Banco de Dados SQL</h5>
+                                        <p class="card-text">Conhecimento em bancos de dados SQL, contemplando: <i>modelagem, criação e manutenção</i>; além do conhecimento avançando como 
+                                            <i><b>Tuning, Execution Plan, Describe</b></i>, entre outros.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div style="padding-top: 3rem;"></div>
+
+
+                        <div class="col-12">
+                            <h1>Outras Skills</h1>
+                            <h2 class="lead text-justify" id="aboutmyskills">Aqui estão minhas breves habilidades que não tenho domínio completo, mas tenho prática e certo conhecimento. 
                             </h2>
                         </div>
                         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" id="row-skills">
@@ -136,7 +189,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Java</h5>
                                         <p class="card-text">Conhecimentos das principais classes do Java, além de
-                                            <b>JavaServer Pages (JSP)</b> e <b>Apache TomCat</b>.
+                                            conhecimento no Framework <b>Spring</b>.
                                         </p>
                                     </div>
                                 </div>
@@ -147,46 +200,23 @@
                                         alt="Flutter">
                                     <div class="card-body">
                                         <h5 class="card-title">Flutter</h5>
-                                        <p class="card-text">Conhecimento para desenvolver aplicativos Mobiles usando <b>FireBase</b> e outros Endpoints/Databases.</p>
+                                        <p class="card-text">Conhecimento para desenvolver aplicativos Mobiles Nativos e WebApps.
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Csharp-logo.png" class="img-fluid card-img-top"
-                                        alt="C#">
-                                    <div class="card-body">
-                                        <h5 class="card-title">.NET & C#</h5>
-                                        <p class="card-text">Conhecimentos das principais classes do C# e o Framework
-                                            .NET como <b>Entity Framework</b> e <b>ASP.NET</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="col">
                                 <div class="card">
                                     <img src="assets/images/logos/Node-logo.png" class="img-fluid card-img-top"
                                         alt="JavaScript (NodeJS)">
                                     <div class="card-body">
-                                        <h5 class="card-title">Javascript (NodeJS)</h5>
-                                        <p class="card-text">Conhecimentos das principais bibliotecas Javascript como
-                                            <b>Express</b>, além de gerenciadores de dependências como <b>NPM</b> e
-                                            <b>Yarn</b>.</p>
+                                        <h5 class="card-title">Javascript</h5>
+                                        <p class="card-text">Conhecimentos das principais bibliotecas JavaScript como
+                                            <b>Express</b>, além de gerenciadores de dependências como <b>NPM</b>.
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Python-logo.png" class="img-fluid card-img-top"
-                                        alt="Python">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Conhecimento das principais funcionalidades de Python além
-                                            de diversar bibliotecas para <b>Machine Learning</b>, <b>Data Science</b> ou
-                                            <b>DevOps</b>. </p>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="col">
                                 <div class="card">
                                     <img src="assets/images/logos/PHP-logo.png" class="img-fluid card-img-top"
@@ -194,29 +224,17 @@
                                     <div class="card-body">
                                         <h5 class="card-title">PHP</h5>
                                         <p class="card-text">Conhecimento sobre a base PHP e aprofundamento do
-                                            <b>Framework Laravel</b> e <b>Composer</b>.</p>
+                                            Framework <b>Laravel</b> e gerenciador de pacotes <b>Composer</b>.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/DB-Logo.png" class="img-fluid card-img-top"
-                                        alt="SQL">
-                                    <div class="card-body">
-                                        <h5 class="card-title">SQL</h5>
-                                        <p class="card-text">Conhecimento em diversos bancos SQL, contemplando: <i>modelagem, criação e manutenção</i>; além do conhecimento
-                                            em <b>T-SQL</b> para tarefas como <b>Procedures</b> e <b>Functions</b>.
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class="col">
                                 <div class="card">
                                     <img src="assets/images/logos/Docker-logo.png" class="img-fluid card-img-top"
                                         alt="Docker Containers">
                                     <div class="card-body">
-                                        <h5 class="card-title">Docker Containers</h5>
+                                        <h5 class="card-title">Docker</h5>
                                         <p class="card-text">Conhecimento base sobre Containers Docker e sua utilização
                                             para criação de sistemas leves, distribuíveis e escaláveis.
                                         </p>
@@ -225,11 +243,11 @@
                             </div>
                             <div class="col">
                                 <div class="card">
-                                    <img src="assets/images/logos/MongoDB-logo.png" class="img-fluid card-img-top"
+                                    <img src="assets/images/logos/nosql-logo.png" class="img-fluid card-img-top"
                                         alt="MongoDB">
                                     <div class="card-body">
-                                        <h5 class="card-title">MongoDB</h5>
-                                        <p class="card-text">Conhecimento base para montar Documentos em um banco NoSQL (Não Relacional).
+                                        <h5 class="card-title">Banco NoSQL</h5>
+                                        <p class="card-text">Conhecimento base sobre Banco de Dados não Relacional, como <b>MongoDB</b> e <b>Redis</b>
                                         </p>
                                     </div>
                                 </div>
@@ -247,7 +265,30 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/logos/windows-server-logo.png" class="img-fluid card-img-top"
+                                        alt="Microsoft Windows Server">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Windows Server</h5>
+                                        <p class="card-text">Conhecimento para gerenciar servidores e montagem de infraestrutura
+                                            como <b>Active Directory (AD)</b>, <b>Servidores DNS</b> e <b>Servidores Web IIS</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/logos/linux-logo.png" class="img-fluid card-img-top"
+                                        alt="Linux">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Linux</h5>
+                                        <p class="card-text">Conhecimento para gerenciar as principais ferrementas do Linux assim como
+                                            configurar <b>aplicações</b> dos mais diversos tipos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -260,7 +301,7 @@
                     <br>
                     <div class="row">
                         <div class="col-12">
-                            <h1>Projetos</h1>
+                            <h1>Projetos Pessoais</h1>
                         </div>
                         <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
                             <div class="col">
@@ -269,16 +310,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Arduino com Multímetro Bluetooth</h5>
                                         <p class="card-text">Utilizando da Engenharia Reversa, a ideia é demonstrar os dados medidos no multímetro em uma tela OLED.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/hoarde.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Projeto Hoarde</h5>
-                                        <p class="card-text">Um site de fácil interatividade para armazenar arquivos e compactá-los além de otimizar fotos e vídeos.
+                                            Projeto útil para eletricistas por exemplo.
                                         </p>
                                     </div>
                                 </div>
@@ -287,8 +319,30 @@
                                 <div class="card">
                                     <img src="assets/images/projects/bitcoin-tracker.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Rastreador de preço de Bitcoin</h5>
+                                        <h5 class="card-title">Rastreador de Preço de Bitcoin</h5>
                                         <p class="card-text">Com ESP8266 Wi-Fi, consulta o preço do Bitcoin e atualiza em uma tela OLED.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/projects/hoarde.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Projeto Hoarde</h5>
+                                        <p class="card-text">Um site de fácil interatividade para armazenar arquivos e compactá-los além de otimizar fotos e vídeos. Ainda em fase de atualização para ser lançado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="card">
+                                    <img src="assets/images/projects/telegram-bot.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Telegram Bot</h5>
+                                        <p class="card-text">Projetos de desenvolvimento de aplicações ChatBot no Telegram. <br>
+                                            Por exemplo, realizei uma aplicação Bot capaz de converter <i>links</i> do YouTube em áudios. <i>(em Javascript)</i>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -297,18 +351,10 @@
                                     <img src="assets/images/projects/learning-cs-from-scratch.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Ciência da Computação de A a Z</h5>
-                                        <p class="card-text">Compilo todos os meus estudos e conhecimentos no meu 
+                                        <p class="card-text">Compilo todos os meus estudos e conhecimentos na minha breve página.
+                                            Por enquanto, estou guardando neste
                                             <a href="https://github.com/BitNers/Learning-CS-from-Scratch" target="_blank" rel="noopener">repositório</a>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/telegram-bot.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Telegram Bot</h5>
-                                        <p class="card-text">Um Bot capaz de converter <i>links</i> do YouTube em áudios. <i>(Feito em Javascript)</i>
+                                            
                                         </p>
                                     </div>
                                 </div>
@@ -326,7 +372,7 @@
                     <br><br>
                     <div class="row">
                         <div class="col-12">
-                            <h1>Contato</h1>
+                            <h1>Contate-me</h1>
 
                         </div>
                         <div class="row">
@@ -345,7 +391,7 @@
                                             rel="noopener">Meu Linkedin</a></li>
                                 </ul><br>
                                 <h2 class="lead text-justify">
-                                    Você também pode me contatar usando o seguinte formulário.
+                                    Você também pode me contatar usando o formulário presente.
                                 </h2>
                                 <br>
                             </div>
