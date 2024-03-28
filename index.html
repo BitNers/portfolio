@@ -1,502 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Developer BitNers Portfolio Github.">
-    <meta name="theme-color" content="#330033">
-
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="preload" as="style" defer>
-        
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/home.css" defer>
-        <link rel="stylesheet" href="assets/css/hero.css" defer>
-    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" defer>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link rel="icon" href="assets/images/coding.png" async>
-
-    <title>Wesley Silva - BitNers</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Wesley Silva - Portfolio</title>
 </head>
-
+<style>
+    @font-face {
+        font-family: 'Blonde';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./assets/fonts/Blonde.woff2');
+    }
+</style>
 <body>
 
-    <div class="container-fluid">
-        <div class="row h-100" id="row-body">
-
-            <div class="col-12 col-md-2 sidebar text-center" id="personalinfo">
-
-                <div class="container animate__animated animate__fadeInUp" id="person-card-photo">
-                    <div class="row h-100">
-                        <div class="col h-100">
-                            <img class="img-fluid" src="assets/images/me.jpg" alt="Wesley Silva"
-                                id="profile-pic">
-                            <h2 id="title-profile-pic">Wesley Silva</h2>
-                            <a href="global/index.html" class="lni icon" 
-                                        rel="noopener"
-                                        style=" padding:0px; width: 100%; font-size: 22px !important; font-style: italic !important; font-weight: 100 !important;">🌐 English Version</a>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row align-items-end" id="IconsSocialMedia">
-                        <div class="col">
-
-                            <a href="https://www.linkedin.com/in/wesleysilva2/" class="lni lni-linkedin icon"
-                                target="_blank" rel="noopener"></a>
-                            <a href="https://github.com/BitNers" class="lni lni-github icon" target="_blank"
-                                rel="noopener"></a>
-                            <div class="row">
-                                <div class="col">
-                                    <br><a href="assets/docs/cv-wesley-2023.pdf" class="lni lni-paperclip icon"
-                                        target="_blank" rel="noopener"
-                                        style=" padding:0px; width: 100%; font-size: 22px !important;">Confira meu
-                                        CV</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-
-            <div class="col-md-10 offset-md-2" id="content-right">
-
-                <div class="jumbotron jumbotron-fluid" id="hero-jumbotron" title="Foto por Mihai">
-                    <!-- Photo by Mihai (Unsplash)-->
-                    <div class="d-flex flex-column justify-content-center" id="container-hero-section">
-                        <h1 class="display-2 animate__animated  animate__fadeInUp">Wesley Silva</h1>
-                        <p class="lead animate__animated animate__fadeInRight animate__delay-1s">$
-                            <span class="typed"
-                                data-typed-items="Desenvolvedor Back-End, Júnior SysAdmin, Entuasiasta em Hardware e IoT, Apaixonado por Café ☕"></span>
-                        </p>
-
-                    </div>
-
-                </div>
-                
-
-                <!-- 
-                
-                    SOBRE MIM
-
-                    -->
-
-                <br><br>
-                <div style="padding-top: 1rem;"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Sobre mim</h1>                          
-                            <br>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h2 class="lead text-justify" id="aboutme">Meu nome é <b class="purple-underline">Wesley Silva</b>, tenho 
-                                            <span id="myAge"></span>
-                                            anos e moro no Rio de Janeiro. 
-                                            Sou Bacharel em <b>Ciência da Computação</b> pela faculdade da Anhanguera - UNIAN.<br>
-                                            Tenho mais de 2 anos de experiência na área da Tecnologia da Informação disposto a trazer a melhor solução para qualquer desafio.
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="col-12 col-md-6 ">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h2 class="lead text-right" id="aboutme">Desde sempre, tive o prazer e o desejo em seguir a área de tecnologia, 
-                                            com base para trabalhar em Back-End como minha principal área, continuamente aprendendo coisas novas, sendo cooperativo e 
-                                            produzindo resultados e alcançar metas. <i>Mente aberta e flexível para trabalhar com novas tecnologias e outras áreas se necessário.</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 
-                
-                    HABILIDADES
-                    
-                    -->
-                    <br><br>
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Main Skills</h1>
-                            <h2 class="lead text-justify" id="aboutmyskills">Aqui descrevo minhas principais habilidades, com um domínio sólido e preparado.
-                            </h2>
-                        </div>
-
-                        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" id="row-skills">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Csharp-logo.png" class="img-fluid card-img-top"
-                                        alt="C#">
-                                    <div class="card-body">
-                                        <h5 class="card-title">C# e Framework .NET</h5>
-                                        <p class="card-text">Conhecimentos das principais classes do C# e o Framework
-                                            .NET como <b>Entity Framework</b> e <b>ASP.NET</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Python-logo.png" class="img-fluid card-img-top"
-                                        alt="Python">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Python</h5>
-                                        <p class="card-text">Conhecimento das principais funcionalidades de Python além
-                                            de diversar bibliotecas para <b>Machine Learning</b>, <b>Data Science</b>, <b>DevOps</b> e <b>Desenvolvimento Web (Flask)</b>. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/DB-logo.png" class="img-fluid card-img-top"
-                                        alt="SQL">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Banco de Dados SQL</h5>
-                                        <p class="card-text">Conhecimento em bancos de dados SQL, contemplando: <i>modelagem, criação e manutenção</i>; além do conhecimento avançando como 
-                                            <i><b>Tuning, Execution Plan, Describe</b></i>, entre outros.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>    
-                        </div>
-
-                        <div style="padding-top: 3rem;"></div>
-
-
-                        <div class="col-12">
-                            <h1>Outras Skills</h1>
-                            <h2 class="lead text-justify" id="aboutmyskills">Aqui estão minhas breves habilidades que não tenho domínio completo, mas tenho prática e certo conhecimento. 
-                            </h2>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" id="row-skills">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Java-logo.png" class="img-fluid card-img-top"
-                                        alt="Java">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Java</h5>
-                                        <p class="card-text">Conhecimentos das principais classes do Java, além de
-                                            conhecimento no Framework <b>Spring</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/flutter-logo.png" class="img-fluid card-img-top"
-                                        alt="Flutter">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Flutter</h5>
-                                        <p class="card-text">Conhecimento para desenvolver aplicativos Mobiles Nativos e WebApps.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Node-logo.png" class="img-fluid card-img-top"
-                                        alt="JavaScript (NodeJS)">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Javascript</h5>
-                                        <p class="card-text">Conhecimentos das principais bibliotecas JavaScript como
-                                            <b>Express</b>, além de gerenciadores de dependências como <b>NPM</b>.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/PHP-logo.png" class="img-fluid card-img-top"
-                                        alt="PHP">
-                                    <div class="card-body">
-                                        <h5 class="card-title">PHP</h5>
-                                        <p class="card-text">Conhecimento sobre a base PHP e aprofundamento do
-                                            Framework <b>Laravel</b> e gerenciador de pacotes <b>Composer</b>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Docker-logo.png" class="img-fluid card-img-top"
-                                        alt="Docker Containers">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Docker</h5>
-                                        <p class="card-text">Conhecimento base sobre Containers Docker e sua utilização
-                                            para criação de sistemas leves, distribuíveis e escaláveis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/nosql-logo.png" class="img-fluid card-img-top"
-                                        alt="MongoDB">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Banco NoSQL</h5>
-                                        <p class="card-text">Conhecimento base sobre Banco de Dados não Relacional, como <b>MongoDB</b> e <b>Redis</b>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/SharePoint-Logo.png" class="img-fluid card-img-top"
-                                        alt="Microsoft Sharepoint">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Microsoft Sharepoint</h5>
-                                        <p class="card-text">Conhecimento para gerenciar as ferrementas do Sharepoint
-                                            como <b>UAC (controle de acesso)</b>, <b>Webparts</b> e <b>automações via
-                                                Powershell PnP</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/windows-server-logo.png" class="img-fluid card-img-top"
-                                        alt="Microsoft Windows Server">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Windows Server</h5>
-                                        <p class="card-text">Conhecimento para gerenciar servidores e montagem de infraestrutura
-                                            como <b>Active Directory (AD)</b>, <b>Servidores DNS</b> e <b>Servidores Web IIS</b>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/logos/Linux-logo.png" class="img-fluid card-img-top"
-                                        alt="Linux">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Linux</h5>
-                                        <p class="card-text">Conhecimento para gerenciar as principais ferrementas do Linux assim como
-                                            configurar <b>aplicações</b> dos mais diversos tipos.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <br>
-                    <!-- 
-                
-                    PROJETOS
-                    
-                    -->
-                    <br>
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Projetos Pessoais</h1>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/arduino.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Arduino com Multímetro Bluetooth</h5>
-                                        <p class="card-text">Utilizando da Engenharia Reversa, a ideia é demonstrar os dados medidos no multímetro em uma tela OLED.
-                                            Projeto útil para eletricistas por exemplo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/bitcoin-tracker.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Rastreador de Preço de Bitcoin</h5>
-                                        <p class="card-text">Com ESP8266 Wi-Fi, consulta o preço do Bitcoin e atualiza em uma tela OLED.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/hoarde.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Projeto Hoarde</h5>
-                                        <p class="card-text">Um site de fácil interatividade para armazenar arquivos e compactá-los além de otimizar fotos e vídeos. Ainda em fase de atualização para ser lançado.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/telegram-bot.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Telegram Bot</h5>
-                                        <p class="card-text">Projetos de desenvolvimento de aplicações ChatBot no Telegram. <br>
-                                            Por exemplo, realizei uma aplicação Bot capaz de converter <i>links</i> do YouTube em áudios. <i>(em Javascript)</i>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="assets/images/projects/learning-cs-from-scratch.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ciência da Computação de A a Z</h5>
-                                        <p class="card-text">Compilo todos os meus estudos e conhecimentos na minha breve página.
-                                            Por enquanto, estou guardando neste
-                                            <a href="https://bitners.github.io/CS-From-Scratch/" target="_blank" rel="noopener">repositório</a>.
-                                            
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                           
-
-                        </div>
-                    </div>
-
-                    <!-- 
-                
-                    CONTATOS
-                    
-                    -->
-                    <br><br>
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Contate-me</h1>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-5">
-                                <h2 class="lead text-justify">
-                                    Sinta-se livre para me contatar pelos seguintes meios.
-                                </h2><br>
-                                <ul class="list-group" style=" margin: 0 auto;">
-                                    <li class="list-group-item list-group-item-action"><i class="lni lni-envelope"></i>
-                                        &nbsp; <a href="mailto:wesleyalvessilva@outlook.com.br">
-                                            wesleyalvessilva@outlook.com.br</a> </li>
-                                    <li class="list-group-item list-group-item-action"><i
-                                            class="lni lni-phone"></i>&nbsp; (21) 99712-7091</li>
-                                    <li class="list-group-item list-group-item-action"><i class="lni lni-linkedin"></i>
-                                        &nbsp; <a href="https://www.linkedin.com/in/wesleysilva2/" target="_blank"
-                                            rel="noopener">Meu Linkedin</a></li>
-                                </ul><br>
-                                <h2 class="lead text-justify">
-                                    Você também pode me contatar usando o formulário presente.
-                                </h2>
-                                <br>
-                            </div>
-
-
-                            <div class="col-12 col-md-7" id="col-contact-form">
-                                <form id="fs-frm" class="needs-validation" name="simple-contact-form"
-                                    accept-charset="utf-8" action="https://formspree.io/f/xpzkplqz" method="post">
-                                    <fieldset id="fs-frm-inputs">
-                                        <label class="form-label" for="full-name">Nome Completo</label>
-
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1"><i
-                                                    class="lni lni-user"></i></span>
-
-                                            <input type="text" class="form-control" name="nome" id="full-name" required>
-
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label class="form-label" for="email-address">Endereço de E-mail</label>
-
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" id="basic-addon1">📧</span>
-
-                                                    <input class="form-control" type="email" name="email"
-                                                        id="email-address" required> </input>
-
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-6">
-                                                <label class="form-label" for="phone">Telefone</label>
-
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" id="basic-addon1">📞</span>
-
-                                                    <input class="form-control" type="text" name="telefone" id="phone"
-                                                        placeholder="(99) 99999-9999" required></input>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-
-                                        <label class="form-label" for="message">Messagem</label>
-                                        <textarea class="form-control" rows="5" name="messagem" id="message"
-                                            placeholder="" required=""></textarea>
-                                        <input type="hidden" name="_subject" id="email-subject"
-                                            value="Contact Form Submission">
-                                    </fieldset>
-                                    <br>
-                                    <input class="form-control btn btn-primary" style="max-width: 200px;" type="submit" value="Enviar">
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- FOOTER  -->
-
-                <footer class="footer-page">
-                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                        <path d="M0.00,49.98 C113.15,177.13 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-                            style="stroke: none; fill: white;">
-                        </path>
-                    </svg>
-                </footer>
-            </div>
-
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand blonde-font" href="#">WS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <div class="container-fluid"></div>
+
 </body>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.inputmask.min.js"></script>
-<script src="assets/js/typed.js" defer></script>
-<script src="assets/js/bootstrap.bundle.min.js" defer></script>
-<script src="assets/js/main.js" defer></script>
-
-
-<script defer>
-
-    $(document).ready(function () {
-        var birthday = new Date(2000,7,23);
-        var ageDifUnixTs = Date.now() - birthday.getTime();
-        var ageDate = Math.abs(new Date(ageDifUnixTs).getFullYear() - 1970); 
-
-        $("#myAge").html(ageDate);
-
-    })
-
-    var behavior = function (val) {
-        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-    }, options = {
-        onKeyPress: function (val, e, field, options) {
-            field.mask(behavior.apply({}, arguments), options);
-        }
-    };
-    $('#phone').mask(behavior, options);
-</script>
-
 </html>
