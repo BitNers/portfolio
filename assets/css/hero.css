@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Blonde";
+    font-weight: 200;
+    src: url("../fonts/Blonde.ttf");
+}
+
 #container-hero-section{
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -25,7 +31,8 @@ h1::after{
     width: 45px;
     height: 3px;
     background: #c407f6;
-    bottom: 0;
+    top: 10px;
+    bottom: 0px;
     left: 0;
 }
 .blue-icon{
@@ -34,8 +41,8 @@ h1::after{
 
 @media (min-width: 576px) {
     #container-hero-section > h1 {
-        font-size: 6rem;
-        font-family: 'Open Sans, Arial';
+        font-size: 3rem;
+        font-family: 'Blonde', 'Open Sans, Arial';
     }
     
     #container-hero-section > p {

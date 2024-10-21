@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Blonde";
+    src: url("../fonts/Blonde.ttf");
+}
 html,body{
     height: 100%;
     margin: auto;
@@ -61,7 +65,7 @@ box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
 
 @keyframes cardHoverUp{
     0% {}
-    100%{transform: scale(1.1);}
+    100%{transform: scale(1.05);}
 }
 
 @keyframes cardHoverDown{
@@ -70,7 +74,7 @@ box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.75);
 }
 
 .card:hover{
-    animation: cardHoverUp 1s forwards;
+    animation: cardHoverUp 2s forwards;
     z-index: 5;
 }
 
